@@ -1,30 +1,22 @@
 import React from 'react'
-import isDark from '../App'
-import toggleTheme from '../App'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-      <div
-        className={`flex items-center justify-between px-6 py-3 border-b ${
-          isDark ? "bg-black border-gray-800" : "bg-white border-gray-300"
-        }`}
+    <div className="flex items-center justify-between px-6 py-3 border-b bg-zinc-900 border-zinc-800">
+      <span className="font-bold text-2xl text-white">CodeBin<span className="text-[#75B06F]">.</span></span>
+      <NavLink
+        to="/home"
+        className={({ isActive }) =>
+          isActive
+            ? "text-white text-sm font-medium"
+            : "text-zinc-500 hover:text-zinc-300 text-sm"
+        }
       >
-        <span
-          className={`font-bold text-lg text-black ${isDark ? "text-white" : "text-black"}`}
-        >
-          CodeBin.
-        </span>
-
-        <div className="flex gap-3">
-          <button
-            onClick={toggleTheme}
-            className="px-4 py-2 bg-gray-700 hover:bg-gray-800 text-white rounded-md text-sm"
-          >
-            {isDark ? "Light Mode" : "Dark Mode"}
-          </button>
-        </div>
-      </div>
+        Overview
+      </NavLink>
+    </div>
   )
 }
 
-export default Header;
+export default Header
