@@ -36,7 +36,7 @@ const features = [
 
 const languages = ['Python', 'JavaScript', 'C++', 'Java', 'Rust', 'Go', 'TypeScript', 'PHP', 'Ruby', 'Swift']
 
-const codeSnippet = `# CodeBin — write, run, share
+const codeSnippet = `# CodeRn — write, run, share
 def greet(name: str) -> str:
     return f"Hello, {name}! 🚀"
 
@@ -662,7 +662,7 @@ const Home = () => {
                 <span className="accent">Share.</span>
               </h1>
               <p className="cb-hero-sub">
-                CodeBin is your browser-based code editor and compiler. Write in any language, execute instantly, and share your work with a single link — no setup required.
+                CodeRn is your browser-based code editor and compiler. Write in any language, execute instantly, and share your work with a single link — no setup required.
               </p>
               <div className="cb-hero-ctas">
                 <button className="cb-btn-primary" onClick={() => window.location.href = '/editor'}>
@@ -721,7 +721,7 @@ const Home = () => {
         {/* ── FEATURES ── */}
         <section className="cb-features">
           <div className="cb-section-header">
-            <p className="cb-section-label">// why codebin</p>
+            <p className="cb-section-label">// why CodeRn</p>
             <h2 className="cb-section-title">Everything you need.<br />Nothing you don't.</h2>
           </div>
 
@@ -740,7 +740,7 @@ const Home = () => {
         <div className="cb-cta-banner">
           <div className="cb-cta-banner-text">
             <h2>Your next great snippet<br />is one click away.</h2>
-            <p>Join thousands of developers already using CodeBin daily.</p>
+            <p>Join thousands of developers already using CodeRn daily.</p>
           </div>
           <button className="cb-btn-primary" style={{ whiteSpace: 'nowrap', flexShrink: 0 }}>
             Open Editor →

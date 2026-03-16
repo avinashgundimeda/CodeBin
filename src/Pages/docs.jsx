@@ -45,22 +45,22 @@ const content = {
   intro: {
     title: 'Introduction',
     badge: 'Getting Started',
-    body: `CodeBin is a browser-based code editor and execution environment. Write code, run it instantly, and share it with a permanent URL — no account required to get started.
+    body: `CodeRn is a browser-based code editor and execution environment. Write code, run it instantly, and share it with a permanent URL — no account required to get started.
 
 Built for developers who want zero friction. No local setup, no dependencies, no waiting. Just open a tab and start coding.`,
     code: null,
-    tip: 'CodeBin supports over 25 programming languages with real-time syntax highlighting and intelligent auto-complete.',
+    tip: 'CodeRn supports over 25 programming languages with real-time syntax highlighting and intelligent auto-complete.',
   },
   quickstart: {
     title: 'Quick Start',
     badge: 'Getting Started',
-    body: `Getting started with CodeBin takes under 30 seconds. Navigate to the Editor, pick your language, write your code, and hit Run. That's it.
+    body: `Getting started with CodeRn takes under 30 seconds. Navigate to the Editor, pick your language, write your code, and hit Run. That's it.
 
 To save and share your snippet, click the Share button in the top-right of the editor. You'll get a permanent URL you can send to anyone.`,
     code: `// 1. Open the Editor from the navbar
 // 2. Select your language
 // 3. Write your code
-console.log("Hello from CodeBin!");
+console.log("Hello from CodeRn!");
 
 // 4. Press Ctrl+Enter to run
 // 5. Click Share → copy your link`,
@@ -69,7 +69,7 @@ console.log("Hello from CodeBin!");
   interface: {
     title: 'The Interface',
     badge: 'Getting Started',
-    body: `The CodeBin editor is divided into three panels: the code editor on the left, the output terminal at the bottom, and the toolbar at the top.
+    body: `The CodeRn editor is divided into three panels: the code editor on the left, the output terminal at the bottom, and the toolbar at the top.
 
 The toolbar contains your language selector, run button, share controls, and settings. The terminal captures both stdout and stderr, color-coded for clarity.`,
     code: null,
@@ -78,7 +78,7 @@ The toolbar contains your language selector, run button, share controls, and set
   languages: {
     title: 'Supported Languages',
     badge: 'Editor',
-    body: `CodeBin supports 25+ languages out of the box. Each language runs in an isolated sandbox with the latest stable runtime version.`,
+    body: `CodeRn supports 25+ languages out of the box. Each language runs in an isolated sandbox with the latest stable runtime version.`,
     code: `const languages = [
   "Python 3.12",  "JavaScript (Node 20)",
   "TypeScript",   "C++17",
@@ -94,7 +94,7 @@ The toolbar contains your language selector, run button, share controls, and set
   shortcuts: {
     title: 'Keyboard Shortcuts',
     badge: 'Editor',
-    body: `CodeBin is designed to keep your hands on the keyboard. All critical actions have shortcuts.`,
+    body: `CodeRn is designed to keep your hands on the keyboard. All critical actions have shortcuts.`,
     table: [
       ['Ctrl + Enter',   'Run code'],
       ['Ctrl + S',       'Save snippet'],
@@ -109,13 +109,13 @@ The toolbar contains your language selector, run button, share controls, and set
   themes: {
     title: 'Editor Themes',
     badge: 'Editor',
-    body: `CodeBin ships with 8 built-in editor themes. The default is a custom dark theme designed for long coding sessions with reduced eye strain.
+    body: `CodeRn ships with 8 built-in editor themes. The default is a custom dark theme designed for long coding sessions with reduced eye strain.
 
 Themes can be changed from the Settings panel (gear icon) in the top-right of the editor. Your preference is saved to localStorage.`,
     code: `// Available themes
 const themes = [
-  "CodeBin Dark",   // default
-  "CodeBin Light",
+  "CodeRn Dark",   // default
+  "CodeRn Light",
   "Monokai",
   "Nord",
   "Dracula",
@@ -132,7 +132,7 @@ const themes = [
 
 Shared snippets are read-only for viewers. They can fork your snippet into their own session with one click.`,
     code: `// Example shared snippet URL
-https://codebin.dev/s/x7k2mP9q
+https://CodeRn.dev/s/x7k2mP9q
 
 // Forking via API
 POST /api/v1/snippets/x7k2mP9q/fork`,
@@ -141,10 +141,10 @@ POST /api/v1/snippets/x7k2mP9q/fork`,
   embed: {
     title: 'Embed Code',
     badge: 'Sharing',
-    body: `You can embed any CodeBin snippet as a live, runnable widget on any webpage. The embed is a sandboxed iframe that lets viewers read and run the code without leaving your site.`,
+    body: `You can embed any CodeRn snippet as a live, runnable widget on any webpage. The embed is a sandboxed iframe that lets viewers read and run the code without leaving your site.`,
     code: `<!-- Embed a snippet -->
 <iframe
-  src="https://codebin.dev/embed/x7k2mP9q"
+  src="https://CodeRn.dev/embed/x7k2mP9q"
   width="100%"
   height="400"
   frameborder="0"
@@ -155,7 +155,7 @@ POST /api/v1/snippets/x7k2mP9q/fork`,
   export: {
     title: 'Export Options',
     badge: 'Sharing',
-    body: `CodeBin supports exporting your snippet in multiple formats directly from the editor toolbar.`,
+    body: `CodeRn supports exporting your snippet in multiple formats directly from the editor toolbar.`,
     table: [
       ['Raw file',     'Download as .py, .js, .cpp, etc.'],
       ['Gist',         'Push directly to GitHub Gist'],
@@ -168,11 +168,11 @@ POST /api/v1/snippets/x7k2mP9q/fork`,
   'api-intro': {
     title: 'API Overview',
     badge: 'API',
-    body: `The CodeBin REST API lets you create, run, and retrieve snippets programmatically. It's ideal for CI pipelines, bots, or integrating CodeBin into your own tools.
+    body: `The CodeRn REST API lets you create, run, and retrieve snippets programmatically. It's ideal for CI pipelines, bots, or integrating CodeRn into your own tools.
 
-Base URL: https://api.codebin.dev/v1`,
+Base URL: https://api.CodeRn.dev/v1`,
     code: `// Run a snippet via API
-const res = await fetch("https://api.codebin.dev/v1/run", {
+const res = await fetch("https://api.CodeRn.dev/v1/run", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

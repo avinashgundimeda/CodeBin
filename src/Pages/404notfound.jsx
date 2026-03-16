@@ -435,7 +435,7 @@ const NotFound = () => {
               <div className="nf-term-dot" style={{ background: '#ff5f57' }} />
               <div className="nf-term-dot" style={{ background: '#febc2e' }} />
               <div className="nf-term-dot" style={{ background: '#75B06F' }} />
-              <span className="nf-term-title">bash — codebin</span>
+              <span className="nf-term-title">bash — CodeRn</span>
             </div>
             <div className="nf-term-body">
               <div className="nf-term-line">

@@ -279,7 +279,7 @@ const Navbar = () => {
       <nav className={`cb-nav ${scrolled ? 'scrolled' : 'top'}`}>
         {/* Brand */}
         <NavLink to="/" className="cb-brand">
-          CodeBin<span className="cb-brand-dot">.</span>
+          CodeRn<span className="cb-brand-dot">.</span>
           <span className="cb-brand-cursor" />
         </NavLink>
 

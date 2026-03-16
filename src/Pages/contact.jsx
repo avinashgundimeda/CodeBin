@@ -21,14 +21,14 @@ const contactMethods = [
     icon: '✦',
     title: 'Email Support',
     desc: 'For private or account-related matters. We reply within 24h.',
-    link: 'support@codebin.dev',
-    href: 'mailto:support@codebin.dev',
+    link: 'support@CodeRn.dev',
+    href: 'mailto:support@CodeRn.dev',
   },
 ]
 
 const faqs = [
   {
-    q: 'Is CodeBin free to use?',
+    q: 'Is CodeRn free to use?',
     a: 'Yes. The core editor, execution, and sharing features are completely free with no account required. A Pro tier is available for higher rate limits and private snippets.',
   },
   {
@@ -37,10 +37,10 @@ const faqs = [
   },
   {
     q: 'Which languages are supported?',
-    a: 'CodeBin supports 25+ languages including Python, JavaScript, TypeScript, C++, Java, Rust, Go, PHP, Ruby, Swift, and more. Check the Docs for the full list.',
+    a: 'CodeRn supports 25+ languages including Python, JavaScript, TypeScript, C++, Java, Rust, Go, PHP, Ruby, Swift, and more. Check the Docs for the full list.',
   },
   {
-    q: 'Can I use CodeBin offline?',
+    q: 'Can I use CodeRn offline?',
     a: 'Code editing works offline, but execution and sharing require an internet connection as code runs on our sandboxed servers.',
   },
   {

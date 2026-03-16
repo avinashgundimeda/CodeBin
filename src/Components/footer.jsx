@@ -521,7 +521,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="ft-brand-col">
             <NavLink to="/" className="ft-logo">
-              CodeBin<span className="ft-logo-dot">.</span>
+              CodeRn<span className="ft-logo-dot">.</span>
             </NavLink>
             <p className="ft-brand-desc">
               A browser-based code editor and execution environment. Write, run,
@@ -565,7 +565,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="ft-bottom">
           <span className="ft-copy">
-            © 2026 <span>CodeBin</span>. Built for developers, by Developer.
+            © 2026 <span>CodeRn</span>. Built for developers, by Developer.
           </span>
 
           <div className="ft-bottom-links">

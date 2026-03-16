@@ -682,7 +682,7 @@ const Login = () => {
                   <p className="lg-card-sub">
                     {tab === 'login'
                       ? 'Enter your credentials to access your workspace.'
-                      : 'Join thousands of developers on CodeBin.'}
+                      : 'Join thousands of developers on CodeRn.'}
                   </p>
 
                   {/* OAuth */}
