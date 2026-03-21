@@ -28,7 +28,7 @@ const Login = () => {
     return e
   }
 
-  const handleSubmit = () => {
+  const handlesSubmit = () => {
     const e = validate()
     if (Object.keys(e).length) { setErrors(e); return }
     setErrors({})
@@ -44,6 +44,49 @@ const Login = () => {
     setShowPass(false)
     setShowConfirm(false)
   }
+  const handleSubmit = async () => {
+  const e = validate()
+  if (Object.keys(e).length) { setErrors(e); return }
+  setErrors({})
+  setLoading(true)
+
+  try {
+    if (tab === 'login') {
+      const res = await fetch('http://localhost:5000/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: form.email, password: form.password })
+      })
+      const data = await res.json()
+      if (!res.ok) {
+        setErrors({ email: data.message || 'Login failed' })
+        return
+      }
+      setSuccess(true)
+      setTimeout(() => {
+        window.location.href = '/'
+      }, 1500)
+
+    } else {
+      const res = await fetch('http://localhost:5000/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: form.name, email: form.email, password: form.password })
+      })
+      const data = await res.json()
+      if (!res.ok) {
+        setErrors({ email: data.message || 'Signup failed' })
+        return
+      }
+      setSuccess(true)
+      setTimeout(() => switchTab('login'), 1500)
+    }
+  } catch (err) {
+    setErrors({ email: 'Server unreachable. Is backend running?' })
+  } finally {
+    setLoading(false)
+  }
+}
 
   return (
     <>
@@ -771,7 +814,7 @@ const Login = () => {
 
                     <button
                       className="lg-submit"
-                      onClick={handleSubmit}
+                      onClick={handlesSubmit}
                       disabled={loading}
                     >
                       {loading
