@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Components/navbar'
 import Footer from '../Components/footer'
 
@@ -51,7 +51,6 @@ const faqs = [
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
-  const [focused, setFocused] = useState(null)
   const [submitted, setSubmitted] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)
   const [errors, setErrors] = useState({})

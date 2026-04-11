@@ -28,14 +28,6 @@ const Login = () => {
     return e
   }
 
-  const handlesSubmit = () => {
-    const e = validate()
-    if (Object.keys(e).length) { setErrors(e); return }
-    setErrors({})
-    setLoading(true)
-    setTimeout(() => { setLoading(false); setSuccess(true) }, 1800)
-  }
-
   const switchTab = (t) => {
     setTab(t)
     setForm({ email: '', password: '', name: '', confirm: '' })
@@ -81,7 +73,7 @@ const Login = () => {
       setSuccess(true)
       setTimeout(() => switchTab('login'), 1500)
     }
-  } catch (err) {
+  } catch {
     setErrors({ email: 'Server unreachable. Is backend running?' })
   } finally {
     setLoading(false)
@@ -814,7 +806,7 @@ const Login = () => {
 
                     <button
                       className="lg-submit"
-                      onClick={handlesSubmit}
+                      onClick={handleSubmit}
                       disabled={loading}
                     >
                       {loading
