@@ -1,4 +1,4 @@
-# CodeBin
+# CodeRn
 
 A lightweight, browser-based code editor built with React and Monaco Editor.
 
